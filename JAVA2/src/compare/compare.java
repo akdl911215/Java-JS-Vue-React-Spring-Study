@@ -1,3 +1,5 @@
+package compare;
+
 public class compare {
     public static void main(String[] args) {
         String str = "abcd";

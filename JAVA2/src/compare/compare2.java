@@ -1,4 +1,6 @@
-public class compare3 {
+package compare;
+
+public class compare2 {
     public static void main(String[] args) {
         String str = "Test String";
         System.out.println("str : " + str);
@@ -9,6 +11,6 @@ public class compare3 {
         System.out.println("str2 address : " + System.identityHashCode(str2));
 
         System.out.println(" ");
-        System.out.println(str.equals(str2));
+        System.out.println(str == str2);
     }
 }
