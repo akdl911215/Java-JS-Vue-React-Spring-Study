@@ -10,5 +10,5 @@ if (done) message = '완료';
 // if 문은 단축 평가로 대체 가능하다.
 // done이 true라면 message에 '완료'를 할당
 message = done && '완료'
-console.log("message : ", message)
+console.log("message : ", message) // message : 완료
 

@@ -6,9 +6,9 @@
 
 <script>
 var app2 = new Vue({
-  el: '#app',
-  data: {
-    message: '안녕하세요 Vue!'
-  }
+    el: '#app',
+    data: {
+        message: '헬로 뷰다'
+    }
 })
 </script>
