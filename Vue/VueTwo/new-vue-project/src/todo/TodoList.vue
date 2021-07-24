@@ -18,7 +18,7 @@
 <script>
 import TodoItem from './TodoItem.vue'
 import {mapState, mapMutations, mapGetters} from 'vuex'
-import {RESET_EDITTING_ID, SET_EDITTING_ID} from '../store/mutation-type'
+import {RESET_EDITTING_ID, SET_EDITTING_ID} from '../store/mutation-types'
 export default {
     components: {
         'todo-item': TodoItem
@@ -27,9 +27,9 @@ export default {
         ...mapGetters ([
             'filteredTodoItems'
         ]),
-        ...mapState ({
+        ...mapState ([
             'editiongId'
-        }),
+        ]),
         todoItems () {
             return this.filteredTodoItems
         }
