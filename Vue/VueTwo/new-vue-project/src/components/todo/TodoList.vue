@@ -18,7 +18,7 @@
 <script>
 import TodoItem from './TodoItem.vue'
 import {mapState, mapMutations, mapGetters} from 'vuex'
-import {RESET_EDITTING_ID, SET_EDITTING_ID} from '../store/mutation-types'
+import {RESET_EDITTING_ID, SET_EDITTING_ID} from '../../store/mutation-types'
 export default {
     components: {
         'todo-item': TodoItem
@@ -28,7 +28,7 @@ export default {
             'filteredTodoItems'
         ]),
         ...mapState ([
-            'editiongId'
+            'editingId'
         ]),
         todoItems () {
             return this.filteredTodoItems
@@ -49,6 +49,5 @@ export default {
             this.$emit('toggleTodoStatus', id)
         }
     }
-
 }
 </script>

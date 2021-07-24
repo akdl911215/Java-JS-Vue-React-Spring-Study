@@ -34,7 +34,7 @@ export default {
         },
         methods: {
             removeTodo() {
-                const id = his.todoItem.id
+                const id = this.todoItem.id
                 this.$emit('removeTodo', id)
             },
             editTodo(event) {
