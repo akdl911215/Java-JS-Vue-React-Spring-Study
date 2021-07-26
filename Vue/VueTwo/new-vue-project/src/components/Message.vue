@@ -1,14 +1,16 @@
 <template>
-    <div id="app">
-        {{ message }}
-    </div>
+  <div id="app">
+    {{ message }}
+  </div>
 </template>
 
 <script>
 export default {
-    name: '#app',
-    data: {
-        message: '반갑고 VUE'
-    }
-}
+  name: "#app",
+  data: function () {
+    return {
+      message: "반갑고 VUE",
+    };
+  },
+};
 </script>

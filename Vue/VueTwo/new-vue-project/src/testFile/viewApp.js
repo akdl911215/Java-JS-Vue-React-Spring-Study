@@ -1,6 +1,8 @@
 var app = new Vue({
-    el: '#app',
-    data: {
-        message: 'HEllo 안녕 뷰당',
-    },
+  el: "#app",
+  data: function () {
+    return {
+      message: "HEllo 안녕 뷰당",
+    };
+  },
 });

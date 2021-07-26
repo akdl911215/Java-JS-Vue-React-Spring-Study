@@ -1,7 +1,7 @@
 export default {
-    filteredTodoItems(state) {
-        if (!state.filter) {
-            return state.todoITems;
-        }
-    },
+  filteredTodoItems(state) {
+    if (!state.filter) {
+      return state.todoITems;
+    }
+  },
 };

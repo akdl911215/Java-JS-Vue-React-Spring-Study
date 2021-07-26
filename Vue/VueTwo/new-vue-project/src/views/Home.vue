@@ -1,25 +1,18 @@
 <template>
   <div class="home">
-    <div id="header">
-      <router-link :to="{ name: 'Home' }"
-                  class="nav-link"
-                  active-class="active">
-            Home
-      </router-link>
-      <router-link :to="{ name: 'Todo' }"
-                  class="nav-link"
-                  active-class="active">
-            Todo
-      </router-link>
-    </div>
+    <img alt="Vue logo" src="../assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'Home',
-    components: {
-      
-    },
-  }
+// @ is an alias to /src
+import HelloWorld from "@/components/HelloWorld.vue";
+
+export default {
+  name: "Home",
+  components: {
+    HelloWorld,
+  },
+};
 </script>

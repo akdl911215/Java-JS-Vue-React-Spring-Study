@@ -17,7 +17,7 @@ export default {
         context.commit(REMOVE_TODO, payload);
     },
     editTodo({ commit }, payload) {
-        context.commit(CLEAR_ALL);
+        commit(EDIT_TODO, payload);
     },
     clearAll(context) {
         context.commit(CLEAR_ALL);
