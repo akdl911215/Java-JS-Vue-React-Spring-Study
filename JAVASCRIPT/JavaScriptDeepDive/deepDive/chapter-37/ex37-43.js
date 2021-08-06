@@ -22,7 +22,9 @@ console.log('[...map] : ', [...map]); // [...map] :  [ [ { name: 'Lee' }, 'devel
 
 // 이터러블인 Map 객체는 배열 디스트럭처링 할당의 대상이 될 수 있다
 const [a, b] = map;
-console.log('a : ', a); // [ { name: 'Lee' }, 'developer' ]
-console.log('b : ', b); // [ { name: 'Kim' }, 'designer' ]
-console.log('a, b : ', a, b); // [ { name: 'Lee' }, 'developer' ] [ { name: 'Kim' }, 'designer' ]
- 
+console.log('a : ', a);
+// [ { name: 'Lee' }, 'developer' ]
+console.log('b : ', b);
+// [ { name: 'Kim' }, 'designer' ]
+console.log('a, b : ', a, b);
+// [ { name: 'Lee' }, 'developer' ] [ { name: 'Kim' }, 'designer' ]

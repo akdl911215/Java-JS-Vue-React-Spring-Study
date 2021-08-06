@@ -6,5 +6,8 @@ const map = new Map([
     [kim, 'designer'],
 ]);
 console.log('map : ', map);
-map.clear();
+// map :  Map(2) {{ name: 'Lee' } => 'developer', { name: 'Kim' } => 'designer' }
+console.log('map.clear() : ', map.clear());
+// map.clear() :  undefined
 console.log('clear map : ', map);
+// clear map :  Map(0) {}
