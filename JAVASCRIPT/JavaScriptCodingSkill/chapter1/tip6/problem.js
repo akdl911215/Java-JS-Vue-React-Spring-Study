@@ -8,4 +8,4 @@ function displayShipping(sections) {
     return false;
 }
 console.log('sections.indexOf : ', sections.indexOf('shipping'));
-console.log('sections : ', sections);
+// console.log('sections : ', sections);
