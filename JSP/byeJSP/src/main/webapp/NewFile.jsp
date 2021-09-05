@@ -7,7 +7,7 @@
 <body>
 <h2>첫번째 페이지</h2>
 <%
-	int a = 10, b = 20;
+	int a = 20, b = 20;
 	out.print(a + b);
 	out.print("<br>");
 %>
