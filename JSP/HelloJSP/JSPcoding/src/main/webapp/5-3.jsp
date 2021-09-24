@@ -19,7 +19,7 @@
 <b>getParameterNames(), getParameterValues() 메서드 사용</b><br>
 <%
 	Enumeration<String> p = request.getParameterNames();
-	while(p.hasMoreElements()) { // hasMoreElements() 열거형 변수를 while에 hasMoreElements() 넣어 모든 개체를 반환할 때까지 반복
+	while(p.hasMoreElements()) { // hasMoreElements()의 element가 존재하면 true
 		String name = p.nextElement();
 		String[] values = request.getParameterValues(name);
 		out.print(name + " : ");
@@ -30,7 +30,7 @@
 	}
 %>
 <br>
-<b>getParameterMap() 메서드 사용</b>
+<b>getParameterMap() 메서드 사용</b><br>
 <%
 	Map<String, String[]> m = request.getParameterMap();
 	for(String name: m.keySet()) {
