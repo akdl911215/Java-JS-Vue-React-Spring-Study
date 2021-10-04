@@ -14,7 +14,8 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
---><web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+--><web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
 
   <!-- ======================== Introduction ============================== -->
   <!-- This document defines default values for *all* web applications      -->
@@ -4728,5 +4729,23 @@
         <welcome-file>index.htm</welcome-file>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
+    
+    <context-param>
+    	<description>톰캣 버전</description>
+    	<param-name>tomcatVersion</param-name>
+    	<param-value>9.0</param-value>
+    </context-param>
+    
+    <context-param>
+    	<description>개발자 이름</description>
+    	<param-name>devName</param-name>
+    	<param-value>이정현</param-value>
+    </context-param>
+    
+    <context-param>
+    	<description>DB 사용 여부</description>
+    	<param-name>isDBEnabled</param-name>
+    	<param-value>true</param-value>
+    </context-param>
 
 </web-app>
