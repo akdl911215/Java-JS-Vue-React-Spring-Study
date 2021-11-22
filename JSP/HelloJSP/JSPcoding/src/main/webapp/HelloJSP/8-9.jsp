@@ -1,11 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"%>
+<%@ page langguage="java" contentType="text/html; charset=UTF-8"%>
 <html>
 <body>
-<!-- submit을 누르면 action이 가르키는 페이지로 이동 -->
-<form action="8-9.jsp" method="post">
-아이디 <input type="text" name="id"><br>
-비밀번호 <input type="password" name="pw"><br>
-<input type="submit" value="확인">
-</form>
+<%
+	String id = request.getParameter("id");
+	String pw = request.getParameter("pw");
+	if(id.equals("admin") && pw.equals("pass")) {
+		Cookie cookie = new Cookie("ID", "ADMIN");
+		response.addCookie(cookie);
+		out.print("<h3>로그인 성공</h3>");
+	} else {
+		out.print("<h3>로그인 시패</h3>");
+	}
+%>
+<h3><a href="8-10.jsp">로그인 확인</a></h3>
 </body>
 </html>
