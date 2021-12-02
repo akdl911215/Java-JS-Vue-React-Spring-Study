@@ -16,7 +16,7 @@
 		작성자		
 	</td>
 	<td>
-		<input type="text" name="write">
+		<input type="text" name="writer">
 	</td>
 </tr>
 <tr>
