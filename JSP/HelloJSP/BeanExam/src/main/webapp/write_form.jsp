@@ -29,6 +29,14 @@
 </tr>
 <tr>
 	<td>
+		첨부파일
+	</td>
+	<td>
+		<textarea rows="20" name="text"></textarea>
+	</td>
+</tr>
+<tr>
+	<td>
 		비밀번호
 	</td>
 	<td>
