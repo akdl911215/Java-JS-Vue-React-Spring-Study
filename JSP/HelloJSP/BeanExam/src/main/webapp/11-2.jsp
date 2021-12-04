@@ -20,15 +20,15 @@
 		Class.forName("org.mariadb.jdbc.Driver");
 		String url = "jdbc:mariadb://localhost:3306/my_db";
 		String user = "user";
-		String password = "456123";
+		String pass = "456123";
 		try (
-			Connection con = DriverManager.getConnection(url, user, password);
+			Connection con = DriverManager.getConnection(url, user, pass);
 			Statement stmt = con.createStatement();
-			ResultSet rs = stmt.executeQuery("select * from member");
+			ResultSet rs = stmt.executeQuery("select * from member where id = 300");
 		){
 			while(rs.next()) {
 				out.print("<tr><td>" + rs.getInt("id") + "</td>");
-				out.print("<td>" + rs.getString("password") + "</td>");
+				out.print("<td>" + rs.getString("pass") + "</td>");
 				out.print("<td>" + rs.getString("name") + "</td>");
 				out.print("<td>" + rs.getString("phone") + "</td>");
 				out.print("<td>" + rs.getString("address") + "</td></tr>");
