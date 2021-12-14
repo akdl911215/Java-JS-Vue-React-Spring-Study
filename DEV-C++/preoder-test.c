@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct node 
+struct node
 {
 	int data;
 	struct node* left;
@@ -12,34 +12,28 @@ struct node* newNode(int data)
 {
 	struct node* node = (struct node*)malloc(sizeof(struct node));
 	node -> data = data;
-	node -> left = NULL;	
+	node -> left = NULL;
 	node -> right = NULL;
-	
-	return node;
 }
 
-void printInorder(struct node* node)
+void printPreorder(struct node* node)
 {
-//	if (node == NULL) return;
 	if (node != NULL) {
-		printInorder(node -> left);
 		printf("%d", node -> data);
-		printInorder(node -> right);
+		printPreorder(node -> left);
+		printPreorder(node -> right);
 	}
-
 }
 
-void main() 
+void main()
 {
 	struct node* root = newNode(1);
 	root -> left = newNode(2);
 	root -> right = newNode(3);
 	root -> left -> left = newNode(4);
 	root -> left -> right = newNode(5);
-	root -> right -> left = newNode(6);
-	root -> right -> right = newNode(7);
 	
-	printf("중위순회로 이진 트리 탐색 : \n");
-	printInorder(root);
+	printf("전위순회로 이진 트리를 탐색하면 : \n");
+	printPreorder(root);
 	free(root);
 }
