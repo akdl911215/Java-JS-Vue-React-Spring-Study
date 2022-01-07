@@ -1,5 +1,4 @@
 const num = Number.EPSILON;
-
 console.log(num);
 // 2.220446049250313e-16
 console.log(typeof num);
@@ -56,3 +55,15 @@ console.log(num7);
 // Number.MAX_SAFE_INTEGER를 넘는 모든 결과는 이상할 수 있다.
 
 // IEEE 754 표준은 엄청나게 넓은 범위를 보장해 주기는 하지만, 각별히 신경 쓰지 않는 이상 실수로 이어지기 십상이다.
+const num8 = Number.MIN_VALUE;
+console.log(num8); // 5e-324
+
+// Number.MIN_VALUE는 영(0)보다 큰 수 중에서 가장 작은 수이다.
+const num9 = 2 ** -1074;
+console.log(num9); // 5e-324
+// 값은 2 ** -1074 와 동일하다. Number.MIN_VALUE보다 작은 양수는 영(0)과 구별이 불가느아다.
+// Number.MIN_VALUE의 유효 숫자는 최하위 비트 단 한개만 포함하고 있으며, 이 비트로 인해 수 없이 많은,
+// 환상에 불과한 유효 숫자가 만들어진다.
+
+// Number.prototype은 모든 수가 상속하는 객체이다. Number.prototype은 많은 메서드를 포함하고 있지만
+// 아쉽게도 그다지 유용하지 않다.
