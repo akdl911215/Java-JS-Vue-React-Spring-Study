@@ -15,17 +15,19 @@ void Partition(int i, int j) {
 	int pivot = arr[(i + j)/2];
 	int Left = i; 
 	int Right = j;
-	while (Left < Right) {
+	while (Left <= Right) {
 		// 피벗 A[0]보다 큰 값을 찾음
-		while (Left < pivot && arr[Left] < arr[0]) Left++;
+		while (arr[Left] < pivot) Left++;
 		
 		// 피벗보다 작은 값을 찾음
-		while (Right > 0 && arr[Right] >= arr[0]) Right--;
+		while (arr[Right] > pivot) Right--;
 		
-		if (Left < Right) {
+		if (Left <= Right) {
 			temp = arr[Left];
 			arr[Left] = arr[Right];
 			arr[Right] = temp;
+			
+			Left++; Right--;
 		} 
 //		else {
 //			temp = arr[0];
