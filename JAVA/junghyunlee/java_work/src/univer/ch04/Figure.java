@@ -1,6 +1,6 @@
 package univer.ch04;
 
-interface Figure {
+public interface Figure {
     double getArea();
 }
 
