@@ -1,8 +1,7 @@
 package univer.ch04.useInterfaceDataType;
 
-import univer.ch04.Figure;
 
-class Circle5 implements Figure {
+class Circle5 implements Figure5 {
 
     private double radius;
     public Circle5(double r) {

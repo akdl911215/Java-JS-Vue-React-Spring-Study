@@ -1,8 +1,7 @@
 package univer.ch04.useInterfaceDataType;
 
-import univer.ch04.Figure;
 
-class Box5 implements Figure {
+class Box5 implements Figure5 {
 
     private double height, width;
     public Box5(double h, double w) {
