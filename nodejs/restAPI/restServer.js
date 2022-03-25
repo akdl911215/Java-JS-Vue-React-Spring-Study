@@ -65,6 +65,5 @@ http
         return res.end("NOT FOUND");
       }
     }
-    consile.log("users :: ", users);
   })
   .listen(8085, () => console.log("8085번 포트에서 서버 대기 중!!"));

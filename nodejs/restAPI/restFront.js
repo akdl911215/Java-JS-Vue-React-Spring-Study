@@ -1,13 +1,20 @@
 function getUser() {
   // 로딩 시 사용자가 가져오는 함수
+
+  // XMLHttpRequest(XHR) 객체는 서버와 상호작용하기 위하여 사용된다.
+  // 전체 페이지의 새로고침 없이도 URL 로부터 데이터를 받아올 수 있다.
+  // 이는 웹 페이지가 사용자가 하고 있는 것을 방해하지 않으면서 페이지의 일부를
+  // 업데이트할 수 있도록 해줍니다. XMLHttpRequest는 AJAX 프로그래밍에 주로 사용된다.
   let xhr = new XMLHttpRequest();
   xhr.onload = function () {
     if (xhr.status === 200) {
-      let users = JOSN.parse(xhr.responseText);
+      let users = JSON.parse(xhr.responseText);
       let list = document.getElementById("list");
+      // innerHTML : Element 속성(property) innerHTML 요소(element) 내에
+      // 포함 된 HTML 또는 XML 마크업을 가져오거나 설정한다.
       list.innerHTML = "";
       Object.keys(users).map(function (key) {
-        let userDiv = documnet.createElement("div");
+        let userDiv = document.createElement("div");
         let span = document.createElement("sapn");
         span.textContent = users[key];
         let edit = document.createElement("button");
@@ -56,7 +63,6 @@ function getUser() {
         list.appendChild(userDiv);
       });
     } else {
-      alert("여기지?");
       console.error(xhr.responseText);
     }
   };
