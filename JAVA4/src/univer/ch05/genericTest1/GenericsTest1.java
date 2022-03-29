@@ -13,9 +13,10 @@ class Data {
 public class GenericsTest1 {
     public static void main(String[] args) {
         Data data = new Data();
-        Object i = new Integer(20);
-//        data.set(i);
+        Integer i = new Integer(20);
+        data.set(i);
+        String s = (String)data.get();
 
-        System.out.println(((String) i));
+        System.out.println(s);
     }
 }
