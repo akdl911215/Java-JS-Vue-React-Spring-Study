@@ -18,5 +18,8 @@
     <ClCompile Include="double-linked-kist-insert-test2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="greed.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

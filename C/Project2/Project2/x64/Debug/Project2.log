@@ -1,10 +1,2 @@
-﻿  double-linked-kist-insert-test2.c
-C:\Users\leejunghyun\Desktop\project3\Java-JS-Vue-React-Spring-Study\C\Project2\Project2\double-linked-kist-insert-test2.c(18,36): warning C4047: 'return': 'NODE *'의 간접 참조 수준이 'int'과(와) 다릅니다.
-C:\Users\leejunghyun\Desktop\project3\Java-JS-Vue-React-Spring-Study\C\Project2\Project2\double-linked-kist-insert-test2.c(22,36): warning C4047: 'return': 'NODE *'의 간접 참조 수준이 'int'과(와) 다릅니다.
-C:\Users\leejunghyun\Desktop\project3\Java-JS-Vue-React-Spring-Study\C\Project2\Project2\double-linked-kist-insert-test2.c(32,24): warning C4047: '==': 'int'의 간접 참조 수준이 'void *'과(와) 다릅니다.
-C:\Users\leejunghyun\Desktop\project3\Java-JS-Vue-React-Spring-Study\C\Project2\Project2\double-linked-kist-insert-test2.c(32,35): warning C4098: 'init': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\leejunghyun\Desktop\project3\Java-JS-Vue-React-Spring-Study\C\Project2\Project2\double-linked-kist-insert-test2.c(35,24): warning C4047: '==': 'int'의 간접 참조 수준이 'void *'과(와) 다릅니다.
-C:\Users\leejunghyun\Desktop\project3\Java-JS-Vue-React-Spring-Study\C\Project2\Project2\double-linked-kist-insert-test2.c(35,35): warning C4098: 'init': 'void' 함수에서 값을 반환하고 있습니다.
-C:\Users\leejunghyun\Desktop\project3\Java-JS-Vue-React-Spring-Study\C\Project2\Project2\double-linked-kist-insert-test2.c(62,7): warning C4013: 'print'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-double-linked-kist-insert-test2.obj : error LNK2019: printmain 함수에서 참조되는 확인할 수 없는 외부 기호
-C:\Users\leejunghyun\Desktop\project3\Java-JS-Vue-React-Spring-Study\C\Project2\x64\Debug\Project2.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
+﻿  greed.cpp
+  Project2.vcxproj -> C:\Users\ownerclan\Desktop\proproject\Java-JS-Vue-React-Spring-C-CPP-NodeJS-Study\C\Project2\x64\Debug\Project2.exe

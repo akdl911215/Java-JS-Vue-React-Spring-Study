@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct NODE // ±¸Á¶Ã¼ ¼±¾ğ
+struct NODE // ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
 {
 	struct NODE* llink;
 	int data;
@@ -10,7 +10,7 @@ struct NODE // ±¸Á¶Ã¼ ¼±¾ğ
 struct NODE* head;
 struct NODE* tail;
 
-// ³ëµå »ı¼º ÇÔ¼ö
+// ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½
 struct NODE* makenode(int value)
 {
 	struct NODE* node = (struct NODE*)malloc(sizeof(struct NODE));
@@ -23,7 +23,7 @@ struct NODE* makenode(int value)
 	return node;
 }
 
-// Ãâ·Â ÇÔ¼ö
+// ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½
 void init()
 {
 	head = (struct NODE*)malloc(sizeof(struct NODE));
@@ -40,7 +40,7 @@ void init()
 	tail->llink = head;
 }
 
-// µÚ·ÎºÎÅÍ ³ëµå Ãß°¡ÇÏ´Â ÇÔ¼ö
+// ï¿½Ú·Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½
 void push_back(int value)
 {
 	struct NODE* newnode = makenode(value);
@@ -52,10 +52,10 @@ void push_back(int value)
 	newnode->rlink = p;
 }
 
-// main ÇÔ¼ö
+// main ï¿½Ô¼ï¿½
 int main()
 {
-	init(); // head, tail ÃÊ±âÈ­
+	init(); // head, tail ï¿½Ê±ï¿½È­
 	push_back(10);
 	push_back(20);
 	push_back(30);
