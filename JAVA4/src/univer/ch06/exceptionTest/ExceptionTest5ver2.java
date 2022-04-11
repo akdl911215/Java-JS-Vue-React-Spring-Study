@@ -1,19 +1,13 @@
 package univer.ch06.exceptionTest;
 
-// finally 블록
-
 import java.io.DataInputStream;
-import java.io.EOFException;
 
-public class ExceptionTest5 {
+public class ExceptionTest5ver2 {
     public static void main(String[] args) {
         DataInputStream dis = new DataInputStream(System.in);
         try {
-            System.out.println("try 시작");
-            int i = dis.readInt();
-//        } catch (EOFException e1) {
-//            System.out.println(e1.toString());
-//            e1.printStackTrace();
+            System.out.println("시작");
+            throw new Exception();
         } catch (Exception e) {
             System.out.println("예외 처리 시작");
             System.out.println(e.toString());
