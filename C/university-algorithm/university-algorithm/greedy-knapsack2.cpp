@@ -9,26 +9,20 @@ int main() {
 	int w[4] = {4, 3, 5, 3}; // 물체 i의 무게
 	double result[4];
 	int rangking[4];
+	int rank = 0;
 
 	for (int i = 0; i < n; ++i) {
 		result[i] = (double) p[i] / (double) w[i];
 		cout << result[i] << endl;
 	}
 
-	int min = 9999;
 	for (int i = 0; i < n; ++i) {
-		int score = 1;
 		for (int j = 0; j < n; ++j) {
-			if (result[j] < min) {
-				min = result[i];
-				rangking[i] = score++;
-			}
-			else {
-				rangking[i] = score++;
-			}
+			if (result[i] < result[j]) rangking[rank++];
 		}
-
 	}
+
+	//for (int i = 0; i < n; ++i) sout << rangking[i] << " ";
 
 	return 0;
 }
