@@ -31,18 +31,25 @@ int main() {
 	for (int i = 0; i < n; ++i)
 		cout << rangking[i] << " ";
 
+	int r = M;
+	int totalBenefit = 0;
 	for (int i = 0; i < n; ++i) {
 		for (int j = 0; j < n; ++j) {
 			if (i == rangking[j]) {
-				int r = M;
-				for (int i = 0; i < n; ++i) {
-					if (w[i] < r) {
-
-					}
+				if (w[j] < r) {
+					r -= w[j];
+					totalBenefit += p[j];
+				} 
+				else {
+					int num = p[j] / w[j];
+					totalBenefit += r * num;
 				}
 			}
 		}
 	}
+
+	cout << endl;
+	cout << "totalBenefit : " << totalBenefit;
 
 	return 0;
 }
