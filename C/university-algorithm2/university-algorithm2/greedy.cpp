@@ -34,10 +34,14 @@ int main() {
 	cout << endl;
 	int r = M;
 	int totalBenefit = 0;
-	for (int i = 0; i < n - 1; ++i) {
-		for (int j = 0; j < n - 1; ++j) {
+
+	cout << "n : " << n << endl;
+	for (int i = 1; i <= n; ++i) {
+		for (int j = 1; j <= n; ++j) {
+			printf("for rangking[%d] : %d\n", j, rangking[j]);
+			//cout << "for rangking[j] : " << rangking[j] << endl;
 			if (i == rangking[j]) {
-				cout << "rangking[j] : " << rangking[j] << endl;
+				cout << "if rangking[j] : " << rangking[j] << endl;
 				if (w[j] < r) {
 					cout << "j ::: " << j << endl;
 					cout << "w[j] :: " << w[j] << endl;
