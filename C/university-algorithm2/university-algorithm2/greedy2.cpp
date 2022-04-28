@@ -26,10 +26,6 @@ int main() {
 		}
 	}
 
-
-	for (int i = 0; i < n; ++i)
-		cout << rangking[i] << " ";
-
 	int r = M;
 	int totalBenefit = 0;
 	for (int i = 0; i < n; ++i) {
@@ -40,18 +36,16 @@ int main() {
 					totalBenefit += p[j];
 				}
 				else {
-					cout << "r : " << r << endl;
-					int num = p[j] / w[j];
-					cout << "num : " << num << endl;
+					double num = (double) p[j] / (double) w[j];
 					totalBenefit += (r * num);
 					r -= r;
-
-					
 				}
 				if (r == 0) break;
 			}
 		}
 	}
+
+	// 가방에 들어간 최대 이익
 	cout << "totalBenefit :: " << totalBenefit << endl;
 
 	return 0;
