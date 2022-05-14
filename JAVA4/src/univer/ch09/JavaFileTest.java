@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class JavaFileTest {
     public static void main(String[] args) {
-        File file = new File("C:\\java\\FilesTest1.java");
+        File file = new File("C:\\java\\FilesTest3.java");
         System.out.println("exists : " + file.exists());
         System.out.println("==========================");
 
