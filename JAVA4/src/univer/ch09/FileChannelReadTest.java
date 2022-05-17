@@ -18,7 +18,14 @@ public class FileChannelReadTest {
         Charset charset = Charset.defaultCharset();
 
         StringBuffer sb = new StringBuffer();
-        int b
+        int byteCount;
+        while ((byteCount = fileChannel.read(buffer)) >= 0) {
+            buffer.flip();
+            sb.append(charset.decode(buffer));
+            buffer.clear();
+        }
+        System.out.println(sb);
+        fileChannel.close();
 
     }
 }
